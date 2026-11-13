@@ -76,11 +76,10 @@
 <script>
 /* =============================================================
   FYL Research · Videojuegos Usuarios
-  ETAPA DE CONEXIÓN: pega aquí, posteriormente, la URL /exec
-  del servicio de Google Apps Script que publica datos agregados.
-  NO insertes la URL privada del CSV de Alchemer ni de RESPUESTAS.
+  FUENTE: servicio público de Apps Script, solo datos agregados.
+  No se incluye la URL privada del CSV de Alchemer ni datos individuales.
 ============================================================= */
-const CONFIG = { API_URL: '', POLL_MS: 5 * 60 * 1000 };
+const CONFIG = { API_URL: 'https://script.google.com/macros/s/AKfycbxjCX3qaft3tGd_UL9vxtHxLTbVJwo2xtdqPD_Zx2VjoeSor7WxLL9ro_Mu-n-2S-_Q/exec', POLL_MS: 5 * 60 * 1000 };
 const QUOTAS = [
   ['11','Tijuana',20,10,5],['21','Monterrey',45,20,10],['22','Ciudad Juárez',15,5,2],
   ['31','Guadalajara',40,20,10],['32','León',20,5,4],['33','Querétaro',15,5,2],
